@@ -1,8 +1,11 @@
+enum StateEntities {
+  CITY = 'city',
+  BOOK = 'book'
+}
+
 type State = {
-  cities: string[]
-  books: Book[]
-  cityResults: string[]
-  bookResults: Book[]
+  entities: Record<StateEntities, string[]>
+  results: Record<StateEntities, string[]>
 }
 
 type Book = {
@@ -10,4 +13,4 @@ type Book = {
   author: string
 }
 
-export { type State, type Book }
+export { type State, type Book, StateEntities }

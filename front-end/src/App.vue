@@ -1,22 +1,11 @@
 <template>
   <div id="app">
-    <main>
-      <h1 class="text-2xl font-bold">Autocomplete Challenge</h1>
-      <section class="flex gap-4">
-        <Autocomplete type="cities" placeholder="Search cities..." />
-        <Autocomplete type="books" placeholder="Search books..." />
-      </section>
+    <main class="w-screen h-screen flex flex-col items-center justify-center p-4">
+      <landing-module />
     </main>
   </div>
 </template>
 
-<script lang="ts">
-import Autocomplete from './components/Autocomplete.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Autocomplete
-  }
-}
+<script setup lang="ts">
+import LandingModule from '@/modules/LandingModule.vue'
 </script>
