@@ -1,5 +1,9 @@
 # Back-end Challenge
 
+## Requirements
+
+- Node.js v18
+
 ## Project setup
 
 In order to run the project, you need to install the dependencies:
