@@ -1,5 +1,5 @@
 <template>
-  <div :class="`w-full`">
+  <div class="w-full">
     <label :for="inputId" class="sr-only">{{ inputLabel }}</label>
     <input
       :id="inputId"
@@ -130,6 +130,8 @@ watch(props.results, () => {
 
 // Focus on input field when component is mounted
 onMounted(() => {
-  if (props.shouldFocus) inputField.value?.focus()
+  if (props.shouldFocus) {
+    inputField.value?.focus()
+  }
 })
 </script>
