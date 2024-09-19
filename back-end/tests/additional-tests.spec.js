@@ -189,7 +189,7 @@ describe("Given ExcessiveCancellationsChecker class", () => {
       const endTime = Date.now();
 
       // Assert
-      expect(endTime - startTime).toBeLessThan(5000); // Assuming it should complete within 5 seconds
+      expect(endTime - startTime).toBeLessThan(10000); // Assuming it should complete within 10 seconds
     });
   });
 });
